@@ -21,8 +21,8 @@ jobs:
       - name: Deploy al servidor remoto
         run: |
           ssh -o StrictHostKeyChecking=no grupo6@165.227.2.90 << 'EOF'
-            cd /home/grupo6/Actividad/GraphQL
+            cd /home/grupo6/ejercicio
             git pull origin main
             npm install --production
-            pm2 restart graphql-server-grupo-6
+            pm2 restart graphql6
           EOF
