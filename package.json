@@ -1,0 +1,24 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/lauris142003/graphql.git"
+  },
+  "author": "Laura Malagon, Carlos Manrique, Maria Medina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/lauris142003/graphql/issues"
+  },
+  "homepage": "https://gitlab.com/lauris142003/graphql#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.10.1"
+  }
+}

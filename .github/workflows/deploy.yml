@@ -1,0 +1,28 @@
+name: Deploy GraphQL Server Grupo 6
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configurar conexión SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy al servidor remoto
+        run: |
+          ssh -o StrictHostKeyChecking=no grupo6@165.227.2.90 << 'EOF'
+            cd /home/grupo6/Actividad/GraphQL
+            git pull origin main
+            npm install --production
+            pm2 restart graphql-server-grupo-6
+          EOF
