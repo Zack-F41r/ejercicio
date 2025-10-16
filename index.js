@@ -62,7 +62,7 @@ const root = {
   actualizarUsuario: ({ id, nombre, email, edad }) => {
     const usuarioIndex = usuarios.findIndex(user => user.id == id);
     if (usuarioIndex === -1) {
-      throw new Error('Usuario no encontrado!!!!!');
+      throw new Error('Usuario no encontraado!!!!!');
     }
     
     if (nombre) usuarios[usuarioIndex].nombre = nombre;
