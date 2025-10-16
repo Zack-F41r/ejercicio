@@ -3,7 +3,7 @@ const { graphqlHTTP } = require('express-graphql');
 const { buildSchema } = require('graphql');
 
 const usuarios = [
-  { id: 1, nombre: 'Ana García', email: 'ana@email.com', edad: 28 },
+  { id: 1, nombre: 'Ana Garca', email: 'ana@email.com', edad: 28 },
   { id: 2, nombre: 'Carlos López', email: 'carlos@email.com', edad: 32 },
   { id: 3, nombre: 'María Rodríguez', email: 'maria@email.com', edad: 25 },
   { id: 4, nombre: 'Pedro Martínez', email: 'pedro@email.com', edad: 30 }
